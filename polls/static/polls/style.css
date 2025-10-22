@@ -1,0 +1,200 @@
+/* Background should cover full screen */
+body {
+    background: url("images/image.png") no-repeat center center fixed;
+    background-size: cover;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+/* Center the content vertically and horizontally */
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.7); /* Optional: adds readability */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* Heading style */
+h1 {
+    font-size: 2em;
+    color: #004d40;
+    margin-bottom: 20px;
+}
+
+/* Poll links */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    margin: 10px 0;
+}
+
+li a {
+    color: green;
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+li a:hover {
+    color: black;
+}
+
+.poll-form {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 30px 40px;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+}
+
+/* -----------------------------------------------------
+   FIELDSET & LEGEND
+   ----------------------------------------------------- */
+
+fieldset {
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+
+legend h1 {
+    font-size: 1.8em;
+    color: #004d40;
+    margin-bottom: 20px;
+}
+
+/* -----------------------------------------------------
+   CHOICES
+   ----------------------------------------------------- */
+
+.choice-item {
+    margin: 10px 0;
+    text-align: left;
+}
+
+.choice-item input[type="radio"] {
+    transform: scale(1.2);
+    margin-right: 10px;
+}
+
+.choice-item label {
+    font-size: 1.1em;
+    cursor: pointer;
+}
+
+/* -----------------------------------------------------
+   ERROR MESSAGE
+   ----------------------------------------------------- */
+
+.error {
+    color: #d32f2f;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+/* -----------------------------------------------------
+   VOTE BUTTON
+   ----------------------------------------------------- */
+
+.vote-btn {
+    background-color: #00796b;
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 8px;
+    font-size: 1.1em;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.vote-btn:hover {
+    background-color: #004d40;
+}
+
+/* -----------------------------------------------------
+   RESULTS PAGE STYLING
+   ----------------------------------------------------- */
+
+/* Ensure results container uses same centered layout */
+.results-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Card style for results */
+.results-card {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 40px 50px;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 100%;
+    max-width: 500px;
+}
+
+/* Heading style */
+.results-card h1 {
+    font-size: 1.8em;
+    color: #004d40;
+    margin-bottom: 25px;
+}
+
+/* Results list */
+.results-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 25px 0;
+}
+
+.results-list li {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(0, 77, 64, 0.1);
+    padding: 10px 15px;
+    border-radius: 8px;
+    margin: 8px 0;
+    font-size: 1.1em;
+}
+
+/* Choice text and vote count */
+.choice-text {
+    font-weight: 600;
+    color: #333;
+}
+
+.vote-count {
+    font-weight: bold;
+    color: #00796b;
+}
+
+/* Vote again button */
+.vote-again-btn {
+    display: inline-block;
+    background-color: #00796b;
+    color: white;
+    text-decoration: none;
+    padding: 12px 25px;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.vote-again-btn:hover {
+    background-color: #004d40;
+    transform: scale(1.05);
+}
